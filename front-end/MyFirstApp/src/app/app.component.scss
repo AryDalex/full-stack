@@ -1,0 +1,25 @@
+.conetainer {
+    display: flex;
+    gap: 2vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.pado-card {
+    border: 1px solid #e6e6e6;
+    max-width: 200px;
+    text-align: center;
+    border-radius: 5px;
+
+    img {
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+}
+
+.id {
+    color: rgb(107, 107, 107);
+    padding: 10px 0px;
+}

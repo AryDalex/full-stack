@@ -1,0 +1,37 @@
+<!-- Hello may first app! -->
+<!-- <div class="pado-card">
+  <h3>{{getData()[0].title}}</h3>
+  <p>{{getData()[0].id}}</p>
+  <img [src]="getData()[0].imageUrl" alt="pado">
+</div> -->
+
+<app-card></app-card>
+
+<!-- <div class="conetainer">
+  <div *ngFor="let myData of getData()" class="pado-card">
+    <img [src]="myData.imageUrl" alt="pado">
+    <h3>{{myData.title}}</h3>
+    <p>{{myData.id}}</p>
+  </div>
+</div> -->
+
+<div class="conetainer">
+	<div *ngFor="let myData of getData()" class="pado-card card">
+		<img [src]="myData.imageUrl" alt="pado">
+		<h3>{{myData.title}}</h3>
+		<p class="id">{{myData.id}}</p>
+	</div>
+</div>
+
+<div>
+  <p>Hello may first app! {{getTitle()}}</p>
+</div>
+<div>
+  <label form="">Title: </label>
+  <input (change)="setTitle($event)" type="text">
+</div>
+<!-- <div>
+  <input [value]="getTitle()" type="text" disabled>
+</div> -->
+
+<router-outlet></router-outlet>
