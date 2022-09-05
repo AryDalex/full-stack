@@ -7,29 +7,46 @@
 
 <app-card></app-card>
 
-<!-- <div class="conetainer">
-  <div *ngFor="let myData of getData()" class="pado-card">
-    <img [src]="myData.imageUrl" alt="pado">
-    <h3>{{myData.title}}</h3>
-    <p>{{myData.id}}</p>
+<div class="ui secondary  menu cabecalho">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Product
+  </a>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui icon input">
+        <input (change)="setTitle($event)" type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+    <a class="ui item">
+      Logout
+    </a>
   </div>
-</div> -->
+</div>
+
+<div>
+  <p class="pesquisa">{{getTitle()}}</p>
+</div>
 
 <div class="conetainer">
 	<div *ngFor="let myData of getData()" class="pado-card card">
 		<img [src]="myData.imageUrl" alt="pado">
 		<h3>{{myData.title}}</h3>
-		<p class="id">{{myData.id}}</p>
+    <p class="preco">{{myData.p}}</p>
+		<!-- <p class="id">{{myData.id}}</p> -->
 	</div>
 </div>
 
-<div>
+<!-- <div>
   <p>Hello may first app! {{getTitle()}}</p>
 </div>
 <div>
   <label form="">Title: </label>
   <input (change)="setTitle($event)" type="text">
-</div>
+</div> -->
 <!-- <div>
   <input [value]="getTitle()" type="text" disabled>
 </div> -->
