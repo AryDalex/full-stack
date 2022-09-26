@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
+  @Imput() title = 'teste title';
+  @Imput() id = 0;
+  @Imput() imageUrl = '';
+
   constructor() { }
 
   ngOnInit(): void {

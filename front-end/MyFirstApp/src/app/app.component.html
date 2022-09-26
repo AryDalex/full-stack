@@ -5,9 +5,13 @@
   <img [src]="getData()[0].imageUrl" alt="pado">
 </div> -->
 
-<app-card></app-card>
+<app-card 
+  *imgfor="let myData of getData()"
+  [title]="myData.title"
+  [id]="myData.id"
+></app-card>
 
-<div class="ui secondary  menu cabecalho">
+<!--<div class="ui secondary  menu cabecalho">
   <a class="active item">
     Home
   </a>
@@ -37,11 +41,11 @@
 		<h3>{{myData.title}}</h3>
     <p class="preco">{{myData.p}}</p>
 		<!-- <p class="id">{{myData.id}}</p> -->
-	</div>
-</div>
+	<!--</div>
+</div> -->
 
 <!-- <div>
-  <p>Hello may first app! {{getTitle()}}</p>
+  <p>Hello my first app! {{getTitle()}}</p>
 </div>
 <div>
   <label form="">Title: </label>
