@@ -1,0 +1,10 @@
+<p>elements-cards works!</p>
+
+<div class="conetainer">
+	<div *ngFor="let myData of getData()" class="pado-card card">
+		<img [src]="myData.imageUrl" alt="pado">
+		<h3>{{myData.title}}</h3>
+    <p class="preco">{{myData.p}}</p>
+		<!-- <p class="id">{{myData.id}}</p> -->
+	</div>
+</div>
